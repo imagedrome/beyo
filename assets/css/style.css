@@ -201,19 +201,6 @@ hr {
 
 /* Article chrome */
 
-.back {
-  margin: 0 0 2em;
-  font-size: 15px;
-}
-
-.back a {
-  color: var(--text-secondary);
-}
-
-.back a:hover {
-  color: var(--link);
-}
-
 .contact-block {
   margin-top: 0.25em;
 }
