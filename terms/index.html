@@ -145,7 +145,7 @@
         <h2>13. Contact</h2>
         <div class="contact-block">
           <p><strong>Broong, Inc.</strong></p>
-          <p>Email: <a href="mailto:info@broong.com">info@broong.com</a></p>
+          <p>Email: <a class="contact-email" href="#" aria-label="Email"></a></p>
           <p>Website: <a href="https://broong.com">https://broong.com</a></p>
         </div>
 
@@ -164,5 +164,17 @@
       </nav>
     </footer>
   </div>
+  <script>
+    (function () {
+      var el = document.querySelector(".contact-email");
+      if (!el) return;
+      var addr = "info" + "@" + "broong.com";
+      el.textContent = addr;
+      el.addEventListener("click", function (e) {
+        e.preventDefault();
+        window.location.href = "mailto:" + addr;
+      });
+    })();
+  </script>
 </body>
 </html>
