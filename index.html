@@ -103,7 +103,7 @@
       >
     </a>
 
-    <a class="poster-email" href="mailto:info@broong.com" aria-label="Email info@broong.com">
+    <a class="poster-email" href="#" aria-label="Email" id="poster-email">
       <img
         src="/assets/images/email@2x.png"
         width="38"
@@ -113,5 +113,15 @@
       >
     </a>
   </main>
+  <script>
+    (function () {
+      var el = document.getElementById("poster-email");
+      if (!el) return;
+      el.addEventListener("click", function (e) {
+        e.preventDefault();
+        window.location.href = "mailto:" + "info" + "@" + "broong.com";
+      });
+    })();
+  </script>
 </body>
 </html>
