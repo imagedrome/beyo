@@ -14,7 +14,7 @@ assets/images/
 
 HTML + CSS only. No frameworks or build step (landing uses a small mailto script).
 
-SEO: `title` / `description` / canonical, Open Graph + Twitter Card, `SoftwareApplication` JSON-LD, `robots.txt`, `sitemap.xml`, favicon / apple-touch-icon, `og-share.png` (1200×630), and visible poster caption (no hidden SEO text).
+SEO: `title` / `description` / canonical, Open Graph + Twitter Card, `SoftwareApplication` JSON-LD, `robots.txt`, `sitemap.xml`, favicon / apple-touch-icon, `og-share.png` (1200×630), and head metadata / JSON-LD / alt only (no on-page SEO caption).
 
 ## Local preview
 
