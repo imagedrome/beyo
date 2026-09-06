@@ -29,3 +29,10 @@ Open `http://localhost:8080`.
 
 Push to the GitHub repo connected to Cloudflare Pages. Root directory = this folder.
 Build command: none. Output directory: `/` (project root).
+
+## HTTPS / host hardening
+
+- `_headers` — HSTS + basic security headers (Cloudflare Pages).
+- `functions/_middleware.js` — 301 redirect `www.` → apex.
+
+If `www` returns Cloudflare **522**, the hostname is not reaching this Pages project. In Cloudflare: Pages → Custom domains → add `www.<domain>`, or point `www` CNAME at the same Pages target as apex.
